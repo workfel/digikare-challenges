@@ -28,6 +28,8 @@
     "@angular/cli": "~16.1.0",
     "@angular/compiler-cli": "~16.1.0",
     "@angular/language-service": "~16.1.0",
+    "@fluffy-spoon/substitute": "^1.208.0",
+    "@ngneat/falso": "^7.0.1",
     "@nx/cypress": "16.5.5",
     "@nx/eslint-plugin": "16.5.5",
     "@nx/jest": "16.5.5",
