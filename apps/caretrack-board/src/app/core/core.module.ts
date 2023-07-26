@@ -2,6 +2,8 @@ import {InjectionToken, NgModule} from "@angular/core";
 import {
   AddCaretrackPresenter,
   AddCaretrackUseCase,
+  CancelCaretrackPresenter,
+  CancelCaretrackUseCase,
   CaretrackRepository,
   CaretrackRepositoryInMemory,
   GetCaretrackPresenter,
@@ -11,12 +13,6 @@ import {
 } from "@digikare-challenges/core/caretracks";
 import {Navigation, Router} from "@angular/router";
 import {Navigate, NavigationRoutes} from "@digikare-challenges/core-domain";
-import {
-  CancelCaretrackUseCase
-} from "../../../../../libs/core/caretracks/src/lib/domain/use-cases/cancel-caretrack/cancel-caretrack-use-case";
-import {
-  CancelCaretrackPresenter
-} from "../../../../../libs/core/caretracks/src/lib/adapters/presenters/cancel-caretrack.presenter";
 
 
 export const INavigation = new InjectionToken<Navigation>('Navigation');
