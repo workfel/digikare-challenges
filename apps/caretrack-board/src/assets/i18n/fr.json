@@ -1,0 +1,22 @@
+{
+  "CREATE_CARETRACK": {
+    "TITLE" : "Créer un suivi",
+    "FORM": {
+      "FIRSTNAME": "Prénom",
+      "LASTNAME": "Nom",
+      "INTERVENTION_DATE": "Date d'intervention",
+      "EMAIL": "Mail",
+      "INTERVENTION": "Type d'intervention",
+      "SAVE": "Créer",
+      "SEX": "Sexe"
+    }
+  },
+  "CARETRACKS": {
+    "TITLE": "Mes suivis",
+    "INTERVENTION_DATE": "Date d'intervention",
+    "ACTION_DETAIL" : "Voir le suivi"
+  },
+  "CARETRACK": {
+    "TITLE": "Détails Suivi"
+  }
+}
