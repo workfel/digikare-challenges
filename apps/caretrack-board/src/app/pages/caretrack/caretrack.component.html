@@ -1,0 +1,12 @@
+<digikare-challenges-layout>
+
+  <section class="font-bold text-neutral-800 text-2xl">
+    {{ 'CARETRACK.TITLE' | translate}}
+  </section>
+
+  <section class="flex flex-col gap-6" *ngIf="caretrack() as caretrack">
+    <digikare-challenges-caretrack-card [caretrack]="caretrack"
+    (cancel)="onCancelCaretrack()"></digikare-challenges-caretrack-card>
+  </section>
+
+</digikare-challenges-layout>

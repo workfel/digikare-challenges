@@ -1,0 +1,20 @@
+<dgk-card>
+  <div>
+    {{caretrack.firstName}} {{caretrack.lastName}}
+  </div>
+
+  <div>
+    {{caretrack.email}}
+  </div>
+
+
+  <p class="font-bold text-xl bg-secondary-500 text-white rounded-full w-24 text-center">
+    {{caretrack.interventionId}}
+  </p>
+
+  <div class="flex flex-col items-center mt-4">
+    <dgk-button class="w-1/2" (click)="cancelIt()" [theme]="ThemeColors.error">Cancel</dgk-button>
+  </div>
+
+
+</dgk-card>

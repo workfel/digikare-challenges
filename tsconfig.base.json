@@ -10,11 +10,30 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@digikare-challenges/add-caretrack": [
+        "libs/add-caretrack/src/index.ts"
+      ],
+      "@digikare-challenges/core-domain": [
+        "libs/core-domain/src/index.ts"
+      ],
+      "@digikare-challenges/core/caretracks": [
+        "libs/core/caretracks/src/index.ts"
+      ],
+      "@digikare-challenges/ui/design-system": [
+        "libs/ui/design-system/src/index.ts"
+      ]
+    }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }
