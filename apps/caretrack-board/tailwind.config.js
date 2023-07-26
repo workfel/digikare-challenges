@@ -1,5 +1,6 @@
 const {createGlobPatternsForDependencies} = require('@nx/angular/tailwind');
 const {join} = require('path');
+const colors = require('tailwindcss/colors');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -9,19 +10,15 @@ module.exports = {
   ],
   theme: {
     colors: {
-      primary: {
-        light: '#5eead4',
-        DEFAULT: '#14b8a6',
-        dark: '#0f766e',
-      },
-      secondary: {
-        light: '#bae6fd',
-        DEFAULT: '#0ea5e9',
-        dark: '#0369a1',
-      },
+      primary: colors.rose,
+      secondary: colors.emerald,
+      neutral: colors.slate,
+      error: colors.red,
+      gray : colors.gray,
       white: '#ffffff',
       black: '#000000',
     },
+
   },
   plugins: [],
 };
