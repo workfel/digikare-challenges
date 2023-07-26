@@ -1,0 +1,13 @@
+<digikare-challenges-layout>
+
+  <section class="font-bold text-neutral-800 text-2xl">
+    {{ 'CARETRACKS.TITLE' | translate}}
+  </section>
+
+  <section class="flex flex-col gap-6">
+    <digikare-challenges-caretrack-list-item *ngFor="let caretrack of caretracks()"
+                                             [caretrack]="caretrack"
+                                             (selected)="selectedCaretrack($event)"></digikare-challenges-caretrack-list-item>
+  </section>
+
+</digikare-challenges-layout>
