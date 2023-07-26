@@ -1,0 +1,13 @@
+<digikare-challenges-layout>
+
+  <section class="font-bold text-neutral-800 text-2xl">
+    {{ 'CREATE_CARETRACK.TITLE' | translate}}
+  </section>
+  <section class="flex flex-col gap-2">
+    <digikare-challenges-create-caretrack-form
+      [interventionIds]="interventionIds() || []"
+      [errors]="errors()"
+      (create)="onCreate($event)"></digikare-challenges-create-caretrack-form>
+  </section>
+
+</digikare-challenges-layout>

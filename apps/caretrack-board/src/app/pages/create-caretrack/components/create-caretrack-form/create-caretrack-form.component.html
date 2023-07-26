@@ -1,0 +1,58 @@
+<dgk-card [formGroup]="formGroup">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <dgk-form-field>
+      <label for="firstName" dgkLabel>{{ "CREATE_CARETRACK.FORM.FIRSTNAME" | translate}}</label>
+      <input type="text" id="firstName" formControlName="firstName" dgkInput>
+
+    </dgk-form-field>
+    <dgk-form-field>
+      <label for="lastName" dgkLabel>{{ "CREATE_CARETRACK.FORM.LASTNAME" | translate}}</label>
+      <input type="text" id="lastName" formControlName="lastName" dgkInput>
+    </dgk-form-field>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <dgk-form-field class="col-span-2">
+      <label for="email" dgkLabel>{{ "CREATE_CARETRACK.FORM.EMAIL" | translate}}</label>
+      <input type="email" id="email" formControlName="email" dgkInput>
+    </dgk-form-field>
+
+    <dgk-form-field>
+      <label for="sex" dgkLabel>{{ "CREATE_CARETRACK.FORM.SEX" | translate}}</label>
+      <select
+        formControlName="sex"
+        id="sex" dgkSelect>
+        <option [value]="'m'">M</option>
+        <option [value]="'f'">F</option>
+      </select>
+    </dgk-form-field>
+  </div>
+
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <dgk-form-field>
+      <label for="intervention" dgkLabel>{{ "CREATE_CARETRACK.FORM.INTERVENTION" | translate}}</label>
+      <select
+        formControlName="interventionId"
+        id="intervention" dgkSelect>
+        <option *ngFor="let id of interventionIds" [value]="id">{{id}}</option>
+      </select>
+
+    </dgk-form-field>
+
+
+    <dgk-form-field>
+      <label for="date" dgkLabel>{{ "CREATE_CARETRACK.FORM.INTERVENTION_DATE" | translate}}</label>
+      <input type="date" id="date" formControlName="interventionDate" dgkInput>
+      <div dgkInputError *ngIf="errors?.interventionDateError">
+        {{errors?.interventionDateError}}
+      </div>
+    </dgk-form-field>
+
+  </div>
+
+  <dgk-button [disabled]="!formGroup.valid || !!errors" (click)="onValid()">
+    {{ "CREATE_CARETRACK.FORM.SAVE" | translate}}
+  </dgk-button>
+
+</dgk-card>
