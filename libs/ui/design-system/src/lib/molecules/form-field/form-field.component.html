@@ -1,0 +1,20 @@
+<div class="w-full flex flex-col px-8 pt-6 pb-8 mb-4">
+
+  <div class="mb-4"
+       [ngClass]="{ 'flex flex-col' : position === 'default', 'flex flex-row gap-4 items-center' : position === 'inline'}">
+    <div class="block text-neutral-600 text-sm font-bold mb-2 uppercase">
+      <ng-content select="[dgkLabel]">
+      </ng-content>
+    </div>
+    <ng-content select="[dgkInput]">
+    </ng-content>
+    <ng-content select="[dgkSelect]">
+    </ng-content>
+  </div>
+  <section>
+    <ng-content select="[dgkInputError]">
+    </ng-content>
+  </section>
+
+
+</div>

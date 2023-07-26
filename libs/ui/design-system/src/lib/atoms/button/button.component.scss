@@ -1,0 +1,20 @@
+@tailwind components;
+
+@layer components {
+
+  button:disabled{
+    @apply disabled:bg-neutral-300 #{!important};
+  }
+  button.primary {
+    @apply bg-primary-500 hover:bg-primary-600;
+
+  }
+
+  button.secondary {
+    @apply bg-secondary-500;
+  }
+
+  button.error {
+    @apply bg-error-500;
+  }
+}
