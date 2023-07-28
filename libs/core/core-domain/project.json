@@ -1,29 +1,29 @@
 {
   "name": "core-domain",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/core-domain/src",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/core/core-domain/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/vite:build",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/core-domain"
+        "outputPath": "dist/libs/core/core-domain"
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["coverage/libs/core-domain"],
+      "outputs": ["coverage/libs/core/core-domain"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/libs/core-domain"
+        "reportsDirectory": "../../coverage/libs/core/core-domain"
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/core-domain/**/*.ts"]
+        "lintFilePatterns": ["libs/core/core-domain/**/*.ts"]
       }
     }
   },

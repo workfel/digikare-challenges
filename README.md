@@ -1,8 +1,33 @@
 # DigikareChallenges
 
-> WIP
+### Objectif
+Faire le test front end Digikare pour avoir un référentiel de ce que je vois comme bonne pratiques à mettre en place dans notre monorepo.
+Mais aussi tester certains tools que j'ai jamais essayé tels que `vitest` `falso`.
+
+Lien du test => https://github.com/digikare/challenges/tree/main/frontend.
 
 
+## Architectures
+- NX 
+- Angular
+- Tailwindcss
+- State management agnostique avec "Elf" https://ngneat.github.io/elf/
+- Clean architectures
+- Atomic design ( ébauche :p )
+
+
+
+# Structure du Projects
+- apps
+  - caretrack-board // Application Angular
+- libs
+  - core
+    - core-domain // Toutes les classes du coeur du domain ( use-case , builder etc..)
+    - caretracks // Libs Typescript du domaine "caretrack" ( suis l'application de folder => [# Architecture lib domaine](#Architecture lib domaine) 
+  - ui
+    - design-system
+      - // Libs en mode atomic design avec angular + tailwindcss
+      
 
 
 # Architecture lib domaine

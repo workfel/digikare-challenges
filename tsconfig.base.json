@@ -22,7 +22,7 @@
         "libs/add-caretrack/src/index.ts"
       ],
       "@digikare-challenges/core-domain": [
-        "libs/core-domain/src/index.ts"
+        "libs/core/core-domain/src/index.ts"
       ],
       "@digikare-challenges/core/caretracks": [
         "libs/core/caretracks/src/index.ts"
