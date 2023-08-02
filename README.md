@@ -50,3 +50,9 @@ Dans la lib
     - [**get-caretracks**](src/lib/domain/use-cases/get-caretracks)
 
 ![archi.png](docs%2Fimages%2Farchi.png)
+
+
+# TODO 
+- [ ] Finir Docs
+- [ ] Faire l'app en React Native ou Ionic pour faire 2 apps différents mais avoir toute le mm code métier et state shared via le domain module
+
