@@ -2,14 +2,14 @@ import {
   AddCaretrackErrorMessages,
   AddCaretrackErrors,
   AddCaretrackFields,
-  AddCaretrackPresentation
-} from "../../domain/ports/presenters/add-caretrack.presentation";
-import {Caretrack} from "../../domain/entities/caretrack";
+  AddCaretrackPresentation,
+  AddCaretrackRequest,
+  AddCaretrackUseCase,
+  Caretrack
+} from "../../domain";
 import {Navigate, NavigationRoutes, PresenterStore} from "@digikare-challenges/core-domain";
 import {Observable} from "rxjs";
 import {select} from "@ngneat/elf";
-import {AddCaretrackUseCase} from "../../domain/use-cases/add-caretrack";
-import {AddCaretrackRequest} from "../../domain/ports/requests";
 
 export interface AddCaretrackPresenterViewModelErrors {
   emailErrors: AddCaretrackErrorMessages | undefined,

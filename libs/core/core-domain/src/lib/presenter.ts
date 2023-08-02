@@ -3,6 +3,7 @@ import {Observable} from "rxjs";
 
 export class PresenterStore<K> {
 
+  // TODO : Next time check testing with Signal
   protected store: Store<{
     name: string,
     state: K

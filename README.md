@@ -11,6 +11,7 @@ Lien du test => https://github.com/digikare/challenges/tree/main/frontend.
 - NX 
 - Angular
 - Tailwindcss
+- TDD
 - State management agnostique avec "Elf" https://ngneat.github.io/elf/
 - Clean architectures
 - Atomic design ( ébauche :p )
@@ -47,3 +48,5 @@ Dans la lib
     - [**cancel-caretrack**](src/lib/domain/use-cases/cancel-caretrack)
     - [**get-caretrack**](src/lib/domain/use-cases/get-caretrack)
     - [**get-caretracks**](src/lib/domain/use-cases/get-caretracks)
+
+![archi.png](docs%2Fimages%2Farchi.png)
